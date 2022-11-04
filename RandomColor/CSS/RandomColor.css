@@ -1,0 +1,60 @@
+@import url(../CSS-Files/CSS-RESET.css);
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#color-selector{
+    background-color: rgb(97, 97, 97);
+    padding: 20px;
+    border-radius: 6px;
+    width: 400px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#color-selector input[type='range']{
+    width:100%;
+    background: violet;
+}
+
+.btn{
+    text-align: center;
+}
+
+.btn #random{
+    background-color: cadetblue;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    transition: 0.2s ease-in-out;
+    font-size: 15px;
+}
+
+.btn #random:hover{
+    cursor: pointer;
+    background-color: rgb(66, 115, 117);
+}
+
+@media screen and (max-width: 325px){
+    #color-selector{
+        width: 150px;
+    }
+
+    .btn #random{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 426px){
+    #color-selector{
+        width: 250px;
+    }
+
+    .btn #random{
+        font-size: 15px;
+    }
+}
